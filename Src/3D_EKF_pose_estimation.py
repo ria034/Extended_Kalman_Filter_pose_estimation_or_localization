@@ -15,8 +15,8 @@ l3 = np.array([10, -5, 3])
 landmarks = [l1, l2, l3]
 
 # Covariances
-R = np.eye(3)*0.1    # process noise
-Q = np.eye(3)*0.5    # measurement noise
+R = np.eye(3)*0.9    # process noise
+Q = np.eye(3)*1    # measurement noise
 
 # Storage
 ground_truth_positions = []
@@ -107,6 +107,6 @@ for mean, cov in zip(EKF_predicted_positions[::5], EKF_covariances[::5]):
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
-ax.set_title('3D Robot Localization with EKF')
+ax.set_title('3D Robot Localization with EKF with higer process noise')
 ax.legend()
 plt.show()
