@@ -15,8 +15,8 @@ l3 = np.array([10, -5, 3])
 landmarks = [l1, l2, l3]
 
 # Covariances
-R = np.eye(3)*0.9    # process noise
-Q = np.eye(3)*1    # measurement noise
+R = np.eye(3)*0.01    # process noise
+Q = np.eye(3)*0.5    # measurement noise
 
 # Storage
 ground_truth_positions = []
