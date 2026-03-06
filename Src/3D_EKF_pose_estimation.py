@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # ----------------------
 # PARAMETERS
 # ----------------------
-deltat = 0.5
+deltat = 0.09
 Px, Py, Pz = 0, 0, 0   # ground truth initial position
 Vx, Vy, Vz = 0, 0, 0
 
